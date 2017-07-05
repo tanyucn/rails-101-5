@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   end
 
   root 'groups#index'
+  resources :posts
 
 end
