@@ -5,7 +5,6 @@
     <%= link_to("Edit", edit_group_path(@group), class: "btn btn-primary pull-right")%>
   <% end %>
 
-
   <table class="table">
     <thead>
      <tr>
@@ -24,5 +23,9 @@
       <% end %>
     </tbody>
   </table>
-  
+
+  <div class="text-center">
+    <%= will_paginate @posts %>
+  </div>
+
 </div>
